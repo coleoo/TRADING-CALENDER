@@ -1,7 +1,8 @@
 // GLOBAL VARIABLES
 const saveButton = document.querySelector('#save-btn');
 
-//BREAKLINE ------------------------------------------------------------------------------------ */
+//NEW FEATURE ------------------------------------------------------------------------------------ */
+// Create x amount of calender days
 for (let i = 1; i < 30; i++) {
 
   let zero = 0;
@@ -16,10 +17,6 @@ for (let i = 1; i < 30; i++) {
   const newDay = document.createElement('div');
   newDay.className = "daybox";
 
-  let buttonTrue = false;
-
-
-
 
   newDay.innerHTML =
     `<div>
@@ -28,15 +25,14 @@ for (let i = 1; i < 30; i++) {
   </div>`;
 
 
-
   const gridContainer = document.getElementById('grid-container');
   gridContainer.appendChild(newDay);
 }
 
 
-//BREAKLINE ------------------------------------------------------------------------------------ */
+//NEW FEATURE ------------------------------------------------------------------------------------ */
 
-// SMILEY FACES COLOR CHANGE
+// Smiley faces color change
 const smile = document.querySelector('#smile');
 const meh = document.getElementById('meh');
 const frown = document.getElementById('frown');
@@ -55,11 +51,11 @@ smileybox.forEach(element => {
 });
 
 // LOOK into nodes when we console.log smileybox it gives us a nodelist which we use to solve this
-// also watch and understand for each go on youtbe
+// also watch and understand for each go on ytube
 
 
-//BREAKLINE ------------------------------------------------------------------------------------ */
-// DAILY TAGS CAROUSEL
+//NEW FEATURE ------------------------------------------------------------------------------------ */
+// Daily tags carousel
 
 const scrollBox = document.getElementById("scroller-wrapper");
 const buttonRight = document.querySelector('.arrow-right');
@@ -76,8 +72,8 @@ buttonRight.addEventListener('click', function scrollit() {
 
 
 
-//BREAKLINE ------------------------------------------------------------------------------------ */
-// ACCESS CALENDER DAYS SO WE CAN OPEN POPUP ON CLICK
+//NEW FEATURE ------------------------------------------------------------------------------------ */
+// Acess each calender day so we can popup on click
 
 const popupContainer = document.querySelector('.popup-container');
 const calenderDays = document.querySelectorAll('.plus-wrapper');
@@ -88,11 +84,7 @@ console.log(calenderDays);
 calenderDays.forEach(element => element.addEventListener('click', function (event) {
   let userClickedThis = (event.target);
   popupContainer.style.display = "block"
-  /* ------------------------------------------------------------------------------------ */
-  /* ------------------------------------------------------------------------------------ */
-  // PROBLEM AREA !!!!
-  /* ------------------------------------------------------------------------------------ */
-  /* ------------------------------------------------------------------------------------ */
+
   // Get values of popup to store in user saved days
   let profitInput = document.getElementById('pl').value;
   let amountOfTradesInput = document.getElementById('trades').value;
@@ -101,8 +93,6 @@ calenderDays.forEach(element => element.addEventListener('click', function (even
 
 
   saveButton.addEventListener('click', function () {
-    buttonTrue = true;
-    console.log(buttonTrue)
     userClickedThis.innerHTML =
       `<div>
   <div class="plus-wrapper">
@@ -122,14 +112,14 @@ calenderDays.forEach(element => element.addEventListener('click', function (even
   });
 }));
 
-// EXIT POPUP
+// Exit popup
 const exitPopup = document.getElementById("exit-btn");
 exitPopup.addEventListener('click', function () {
   popupContainer.style.display = "none"
 });
 
-//BREAKLINE ------------------------------------------------------------------------------------ */
-// CHANGE COLOR THEME FROM LIGHT TO DARK ON CLICK
+//NEW FEATURE ------------------------------------------------------------------------------------ */
+// Change color from dark to light theme
 
 const bigBoy = document.querySelector('.big-boy-container');
 const rightContainer = document.querySelector('#right-container');
@@ -173,9 +163,10 @@ lightModeBtn.addEventListener('click', function changeToLightMode() {
   popupContain.style.background = '#d4d4d4'
   popupBox.style.background = '#d4d4d4'
 });
-//BREAKLINE ------------------------------------------------------------------------------------ */
+//NEW FEATURE ------------------------------------------------------------------------------------ */
 
-// CHANGE COLOR THEME FROM DARK TO LIGHT ON CLICK
+// Change color from light to dark theme
+
 
 let darkModeBtn = document.getElementById('next');
 
@@ -209,5 +200,4 @@ darkModeBtn.addEventListener('click', function changeToLightMode() {
 });
 
 // TRY STORING THE NEW CALENDER VALUES INTO AN 0BJECT AND THEN PARSE THOSE VALUES TO THE CALENDER DAY THAT THE USER CLICKS ON
-
 // JUST SAVING THIS IDEA FOR TOMMORROW
