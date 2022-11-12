@@ -34,8 +34,8 @@ for (let i = 1; i < 30; i++) {
 }
 
 
-
 //BREAKLINE ------------------------------------------------------------------------------------ */
+
 // SMILEY FACES COLOR CHANGE
 const smile = document.querySelector('#smile');
 const meh = document.getElementById('meh');
@@ -59,7 +59,7 @@ smileybox.forEach(element => {
 
 
 //BREAKLINE ------------------------------------------------------------------------------------ */
-// DAILY TAGS CARRASEL
+// DAILY TAGS CAROUSEL
 
 const scrollBox = document.getElementById("scroller-wrapper");
 const buttonRight = document.querySelector('.arrow-right');
@@ -88,8 +88,11 @@ console.log(calenderDays);
 calenderDays.forEach(element => element.addEventListener('click', function (event) {
   let userClickedThis = (event.target);
   popupContainer.style.display = "block"
-
-
+  /* ------------------------------------------------------------------------------------ */
+  /* ------------------------------------------------------------------------------------ */
+  // PROBLEM AREA !!!!
+  /* ------------------------------------------------------------------------------------ */
+  /* ------------------------------------------------------------------------------------ */
   // Get values of popup to store in user saved days
   let profitInput = document.getElementById('pl').value;
   let amountOfTradesInput = document.getElementById('trades').value;
@@ -207,4 +210,4 @@ darkModeBtn.addEventListener('click', function changeToLightMode() {
 
 // TRY STORING THE NEW CALENDER VALUES INTO AN 0BJECT AND THEN PARSE THOSE VALUES TO THE CALENDER DAY THAT THE USER CLICKS ON
 
-// JUST SAVING THIS IDEA FOR TOMMMOROW
+// JUST SAVING THIS IDEA FOR TOMMORROW
