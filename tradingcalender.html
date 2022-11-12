@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRADER CALENDER</title>
+  <link rel="stylesheet" href="tradingcalender.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/74914c7055.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="big-boy-container">
+    <div id="left-container">
+      <div id="left-head">
+        <div id="left-head-box">
+        <img src="edge.png" alt="logo" id="logo">
+        <div class="back-next-btn-right">
+          <div id="back">
+            <h5>Light</h5>
+          </div>
+          <div id="next">
+            <h5>Dark</h5>
+          </div>
+        </div>
+       </div>
+      </div>
+      <div id="acount-balance">
+        <div id="acount-balance-box">
+          <div id="icon-box">
+          <i id="dollar-icon" class="fa-solid fa-dollar-sign"></i>
+          </div>
+          <div id="balance-box">
+            <h1>1.47</h1>
+            <p>Account Balance</p>
+          </div>
+        </div>
+      </div>
+      <ul id="options-list">
+        <div class="item0">
+          <div class="icon-options">
+            <i id="options-icon" class="fa-solid fa-house-chimney"></i>
+          </div>
+          <div class="option-name">
+            <h3 id="options-h3">Home</h3>
+          </div>
+        </div>
+        <div class="item0">
+          <div class="icon-options">
+            <i id="options-icon" class="fa-solid fa-chart-simple"></i>
+          </div>
+          <div class="option-name">
+            <h3 id="options-h3">Backtester</h3>
+          </div>
+        </div>
+        <div class="item0">
+          <div class="icon-options">
+            <i id="options-icon" class="fa-solid fa-box-archive"></i>
+          </div>
+          <div class="option-name">
+            <h3 id="options-h3">Strategy Calender</h3>
+          </div>
+        </div>
+        <div class="item0">
+          <div class="icon-options">
+            <i id="options-icon" class="fa-solid fa-calendar-days"></i>
+          </div>
+          <div class="option-name">
+            <h3 id="options-h3">PnL Calender</h3>
+          </div>
+        </div>
+        <div class="item0">
+          <div class="icon-options">
+            <i id="options-icon" class="fa-solid fa-calculator"></i>
+          </div>
+          <div class="option-name">
+            <h3 id="options-h3">Position Calculator</h3>
+          </div>
+        </div>
+        <div class="item0">
+          <div class="icon-options">
+            <i id="options-icon" class="fa-solid fa-ranking-star"></i>
+          </div>
+          <div class="option-name">
+            <h3 id="options-h3">Indicators & Strats</h3>
+          </div>
+        </div>
+        <div class="item01">
+          <div class="icon-options">
+            <i id="options-icon"></i>
+          </div>
+          <div class="option-name">
+            <h3 id="options-h3"></h3>
+          </div>
+        </div>
+      </ul>
+      <div class="item0">
+        <div class="icon-options">
+          <i id="options-icon" class="fa-solid fa-inbox"></i>
+        </div>
+        <div class="option-name">
+          <h3 id="options-h3">Inbox</h3>
+        </div>
+      </div>
+    </div>
+    <div id="right-container">
+      <div id="right-main-content-box">
+        <div id="right-head">
+          <div id="right-head-content">
+          <div class="back-next-btn">
+            <div id="back">
+              <h5>BACK</h5>
+            </div>
+            <div id="next">
+              <h5>NEXT</h5>
+            </div>
+          </div>
+          <h1 id="date">August 2022</h1>
+          <div id="win-lose-container">
+            <div id="box">
+              <h1 id="top">Wins</h1>
+              <h2 id="bottom">3</h2>
+            </div>
+            <div id="box">
+              <h1 id="top">Losses</h1>
+              <h2 id="bottom">1</h2>
+            </div>
+            <div id="box">
+              <h1 id="top">Trades</h1>
+              <h2 id="bottom">23</h2>
+            </div>
+            <div id="box">
+              <h1 id="top">Profible</h1>
+              <h2 id="bottom">75%</h2>
+            </div>
+            <div id="box">
+              <h1 id="top">P&L</h1>
+              <h2 id="bottom">100%</h2>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id="grid-container">
+          <div class="weekdays">
+            <h3>SUN</h3>
+          </div>
+          <div class="weekdays">
+            <h3>MON</h3>
+          </div>
+          <div class="weekdays">
+            <h3>TUES</h3>
+          </div>
+          <div class="weekdays">
+            <h3>WED</h3>
+          </div>
+          <div class="weekdays">
+            <h3>THU</h3>
+          </div>
+          <div class="weekdays">
+            <h3>FRI</h3>
+          </div>
+          <div class="weekdays">
+            <h3>SAT</h3>
+          </div>
+          <div class="daybox">
+            <h3 id="day">TEST DAY</h3>
+            <div class="plus-wrapper">
+            <div id ="inner-day-content-box">
+              <div id="line1">
+                <h7>-2%</h7>
+              </div>
+              <div id="line2">
+                <h3 style="font-size: 1..25rem;">7 Trades</h3>
+              </div>
+              <div id="line3">
+              <i id="smiley-day" class="fa-regular fa-face-smile"></i>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--BREAKLINE --------------------------------------------------------------------------------- -->
+  <!-- POPUP WINDOW SMILEY FACES -->
+
+  <div class="popup-container">
+    <div class="popup-content-box">
+      <div class="row-div">
+        <div class="close-popup-box">
+          <i id="exit-btn" class="fa-solid fa-circle-xmark"></i>
+        </div>
+      </div>
+  
+      <div class="row-div">
+        <div class="header-box">
+          <div class="wrap-heads">
+          <div class="header-left-box">
+        <div class="prof-loss">
+          <label id="row-div" class="row-div">Profit or Loss</label>
+          <input placeholder=" -100$" type="number" id="pl" autocomplete="off">
+        </div>
+        <div class="currency">
+          <select name="Currency" id="Currency">
+            <option>$</option>
+            <option>£</option>
+            <option>₿</option>
+          </select>
+        </div>
+      </div>
+      <div class="header-right-box">
+        <div class="total-trades">
+          <label id="row-div" class="row-div">Total Trades</label>
+          <input placeholder=" Trades" type="trades" id="trades" autocomplete="off">
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="row-div">
+        <div class="tags-box-container">
+          <button class="arrow-left"><</button>
+          <div class="tags-box">
+            <div id="scroller-wrapper">
+              <div ><button id="tags">Perfect Trading</button></div>
+              <div ><button id="tags">Plan Deviation</button></div>
+              <div ><button id="tags">Oversizing</button></div>
+              <div ><button id="tags">Fomo</button></div>
+              <div ><button id="tags">Not Patient</button></div>
+              <div ><button id="tags">No Trades</button></div>
+              <div ><button id="tags">Too Many Trades</button></div>
+            </div>
+            
+          </div>
+          <button class="arrow-right">></button>
+        </div>
+      </div>
+      <div class="row-div">
+        <div class="smiley-box"> 
+          <div class="smile-div">
+            <i id="smile" class="fa-regular fa-face-smile"></i>
+          </div>
+          <div class="smile-div">
+            <i id="meh" class="fa-regular fa-face-meh-blank"></i>
+          </div>
+          <div class="smile-div">
+          <i id="frown" class="fa-regular fa-face-frown"></i>
+          </div>
+        </div>
+      </div>
+      <div class="labels">
+        <label class="row-div">Notes</label>
+      </div>
+      <div class="row-div">
+        <div class="add-notes-box">
+          <textarea id="notes" cols="30" rows="5"></textarea>
+          <!-- text area changed padding / margin to get it to align start of typing top left -->
+        </div>
+      </div>
+      <div class="row-div">
+        <div class="footer-box">
+          <div class="clear-day-div">
+            <button>Clear Day</button>
+          </div>
+          <div class="save-div">
+            <button id="save-btn">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--BREAKLINE --------------------------------------------------------------------------------- -->
+
+
+
+
+  <script src="tradingcalender.js"></script>
+</body>
+</html>
