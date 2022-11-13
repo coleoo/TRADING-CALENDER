@@ -85,14 +85,23 @@ calenderDays.forEach(element => element.addEventListener('click', function (even
   let userClickedThis = (event.target);
   popupContainer.style.display = "block"
 
-  // Get values of popup to store in user saved days
-  let profitInput = document.getElementById('pl').value;
-  let amountOfTradesInput = document.getElementById('trades').value;
-
-  console.log(profitInput);
-
-
   saveButton.addEventListener('click', function () {
+
+    // Get values of popup to store in user saved days
+    // you need to asing the data to variables in the correct moment when the function is called not before... 
+    // can i see an example, well you have a example here when you tun this event, when you press the button then you assing data to the variables because the function is running, otherwise the vaibles will be empty
+    // plase run this code then you will see the problem is gone
+    // Okay!! wow thank you haha that makes much more sense so simple i think was overhtinking it
+    // yes it was not complex maybe you need more practice with javascript so youcan improve your skill
+
+    // I am goign to devliver project riht now plase accep it and leave a good review that is great help for me
+    // Of course i totally will thank you for the help ok give one moment ok np
+    let profitInput = document.getElementById('pl').value;
+    let amountOfTradesInput = document.getElementById('trades').value;
+
+    // YOU CAN just leave comments like this so they can be logged 
+
+
     userClickedThis.innerHTML =
       `<div>
   <div class="plus-wrapper">
@@ -176,7 +185,7 @@ darkModeBtn.addEventListener('click', function changeToLightMode() {
   }
   for (let i = 0; i < icons.length; i++) {
     icons[i].style.color = '#f1eff1';
-  }
+  } nte
   for (let i = 0; i < h1.length; i++) {
     h1[i].style.color = '#f1eff1';
   }
@@ -201,3 +210,4 @@ darkModeBtn.addEventListener('click', function changeToLightMode() {
 
 // TRY STORING THE NEW CALENDER VALUES INTO AN 0BJECT AND THEN PARSE THOSE VALUES TO THE CALENDER DAY THAT THE USER CLICKS ON
 // JUST SAVING THIS IDEA FOR TOMMORROW
+
